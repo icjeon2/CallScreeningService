@@ -1,0 +1,10 @@
+
+<!-- add this AndroidManifest.xml -->
+<service android:name=".service.MyCallScreeningService"
+    android:permission="android.permission.BIND_SCREENING_SERVICE"
+    android:enabled="true"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="android.telecom.CallScreeningService"/>
+    </intent-filter>
+</service>
